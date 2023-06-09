@@ -174,7 +174,7 @@ p{
 }
 
 #message-text {
-    color: #B11313;
+    color: black;
     font-family: 'Nunito Sans', monospace;
 	text-align: center;
     font-weight: 700;
@@ -182,7 +182,7 @@ p{
 }
 
 #message-text-2 {
-    color: #B11313;
+    color: black;
     font-family: 'Nunito Sans', monospace;
 	
     max-width: 80%;

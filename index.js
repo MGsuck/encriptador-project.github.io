@@ -7,8 +7,10 @@ function encrypt() {
             document.getElementById("text-show").style.display = "none";
             document.querySelector(".div-message").style.display="flex";
             document.querySelector(".bt_copy").style.display="none";
-            document.getElementById("message-text").textContent = "Mayúsculas y/o tíldes detectadas";
-            document.getElementById("message-text-2").textContent = "Por favor elimina las mayúsculas y/o tíldes para continuar";
+            document.getElementById("message-text").style.color = "red";
+            document.getElementById("message-text-2").style.color = "red";
+            document.getElementById("message-text").textContent = "Mayúsculas y/o tildes detectadas";
+            document.getElementById("message-text-2").textContent = "Por favor elimina las mayúsculas y/o tildes para continuar";
         } else{
             let translate = texto.
                 replace(/e/g,"enter").
@@ -16,6 +18,8 @@ function encrypt() {
                 replace(/a/g,"ai").
                 replace(/o/g,"ober").
                 replace(/u/g,"ufat");
+            document.getElementById("message-text").style.color = "black";
+            document.getElementById("message-text-2").style.color = "black";
             document.getElementById("text-show").value = translate;
             document.getElementById("text-show").style.display = "flex";
             document.querySelector(".bt_copy").style.display="flex";
@@ -35,8 +39,10 @@ function decrypt() {
             document.getElementById("text-show").style.display = "none";
             document.querySelector(".div-message").style.display="flex";
             document.querySelector(".bt_copy").style.display="none";
-            document.getElementById("message-text").textContent = "Mayúsculas y/o tíldes detectadas";
-            document.getElementById("message-text-2").textContent = "Por favor elimina las mayúsculas y/o tíldes para continuar";
+            document.getElementById("message-text").style.color = "red";
+            document.getElementById("message-text-2").style.color = "red";
+            document.getElementById("message-text").textContent = "Mayúsculas y/o tildes detectadas";
+            document.getElementById("message-text-2").textContent = "Por favor elimina las mayúsculas y/o tildes para continuar";
         } else{
             let translate = texto.
                 replace(/enter/g,"e").
@@ -44,6 +50,8 @@ function decrypt() {
                 replace(/ai/g,"a").
                 replace(/ober/g,"o").
                 replace(/ufat/g,"u");
+            document.getElementById("message-text").style.color = "black";
+            document.getElementById("message-text-2").style.color = "black";
             document.getElementById("text-show").value = translate;
             document.getElementById("text-show").style.display = "flex";
             document.querySelector(".bt_copy").style.display="flex";
